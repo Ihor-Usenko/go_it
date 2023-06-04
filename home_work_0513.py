@@ -1,8 +1,9 @@
+
 import re
 
-text = "Guido van Rossum began working on Python in the late 1980s, as a successor to the ABC programming language, and first released it in 1991 as Python 0.9.0."
-spam_words = ['began', 'released', 'ssk']
+text = 'Ima.Fool@iana.org Ima.Fool@iana.o 1Fool@iana.org first_last@iana.org first.middle.last@iana.or a@test.com abc111@test.com.net'
 
-text = re.sub('began', '*'*len('began'), text)
-
-print(text)
+def find_all_emails(text):
+    result = re.findall(r'[\w]*+@[a-zA-Z]*.[a-zA-Z]*.[a-zA-Z]+', text, re.ASCII)
+    return result
+print(find_all_emails(text))
