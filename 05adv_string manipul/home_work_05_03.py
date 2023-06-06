@@ -8,4 +8,4 @@ def sanitize_phone_number(phone):
             continue
     return new_phone
 
-print(sanitize_phone_number("     0503451234"))
+print(sanitize_phone_number())
