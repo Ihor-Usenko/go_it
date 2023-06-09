@@ -9,7 +9,7 @@ with open('text.txt', 'r') as cats:
         dictionary = dict(zip(keys, i))
         dict_cat.append(dictionary)
         
-    return dict_cat
+    print(dict_cat)
 
 
  
